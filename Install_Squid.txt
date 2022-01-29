@@ -1,0 +1,21 @@
+===Install Squid===
+#sudo apt-get install squid
+
+===Config squid===
+# nano/etc/squid/squid.conf
+acl localnet src 192.168.1.200
+acl whitelist dstdomain "etc/squid/whitelist.acl"
+
+http_access allow localnet whitelist
+http_access deny all
+
+===Whitelsit===
+nano /etc/squid/whitelist.acl
+
+.ubuntu.com
+.docker.com
+.github.com
+.githubusercontent.com
+.quay.io
+.grafana.com
+
