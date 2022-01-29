@@ -1,0 +1,6 @@
+.google.com
+.quay.io
+.ubuntu.com
+.docker.com
+.ifconfig.io
+.github.com
